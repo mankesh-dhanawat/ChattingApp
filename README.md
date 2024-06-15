@@ -10,10 +10,10 @@ ChattingApp is an Android messaging application built with Kotlin and Firebase C
 - Clean and intuitive user interface optimized for a seamless chatting experience.
 
 ## Screenshots
-
-![Screenshot 1](content/screenshot1.png)
-![Screenshot 2](content/screenshot2.png)
-![Screenshot 3](content/screenshot3.png)
+<p align="center">
+  <img src="content/screenshot1.png" alt="Login Screen" width="200" style="margin-right: 10px;"/>
+  <img src="content/screenshot2.png" alt="Chat Screen" width="200" style="margin-right: 10px;"/>
+</p>
 
 ## Technologies Used
 
