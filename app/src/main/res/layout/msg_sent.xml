@@ -5,12 +5,20 @@
 
     <TextView
         android:id="@+id/sent_msg_txt"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#CCA5D6A7"
-        android:padding="5dp"
-        android:layout_margin="5dp"
+        android:layout_marginStart="100dp"
+        android:textSize="20sp"
+        android:background="@drawable/background_corners_all_20"
+        android:backgroundTint="?colorPrimaryVariant"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
         android:text="This is sent message"/>
 
 </RelativeLayout>

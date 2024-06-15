@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_green"
+    android:background="?colorPrimaryContainer"
     tools:context=".ChatActivity">
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecyclerView"
@@ -20,7 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:weightSum="100"
         android:layout_marginBottom="5dp"
         android:orientation="horizontal">
 
@@ -28,7 +26,7 @@
             android:id="@+id/chatMessageBox"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_weight="90"
+            android:layout_weight="9"
             android:layout_marginLeft="10dp"
             android:paddingLeft="20dp"
             android:background="@drawable/msg_backgoround"
@@ -39,8 +37,10 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_weight="10"
-            android:src="@drawable/send_black"/>
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/send_black"
+            app:tint="?colorPrimary" />
     </LinearLayout>
 
 </RelativeLayout>

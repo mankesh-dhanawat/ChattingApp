@@ -30,7 +30,10 @@ class Login : AppCompatActivity() {
             val email = binding.emailEt.text.toString()
             val password = binding.passwordEt.text.toString()
 
-            login(email, password)
+            if(email.isEmpty() || password.isEmpty()){
+                Toast.makeText(this, "Empty fields are not allowed", Toast.LENGTH_SHORT).show()
+            }
+            else login(email, password)
         }
 
     }
@@ -43,7 +46,7 @@ class Login : AppCompatActivity() {
                 startActivity(intent)
             }
             else{
-                Toast.makeText(this, "User Does Not Exits", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show()
             }
         }
     }

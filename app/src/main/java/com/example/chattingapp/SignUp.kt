@@ -30,13 +30,21 @@ class SignUp : AppCompatActivity() {
             val name = binding.nameEt.text.toString()
             val email = binding.emailEt.text.toString()
             val password = binding.passwordEt.text.toString()
-
+            
             signup(name, email, password)
         }
 
     }
 
     private fun signup(name: String, email: String, password: String) {
+        if(name.isEmpty() || password.isEmpty() || email.isEmpty()){
+            Toast.makeText(this, "Empty fields are not allowed!", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if(password.length<6){
+            Toast.makeText(this, "Password must be atleast 6 characters", Toast.LENGTH_SHORT).show()
+            return
+        }
         firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
             if(it.isSuccessful){
                 Toast.makeText(this, "Account Created", Toast.LENGTH_SHORT).show()
@@ -48,7 +56,6 @@ class SignUp : AppCompatActivity() {
                 startActivity(intent)
             }
             else{
-
                 Toast.makeText(this, "Some error occurred", Toast.LENGTH_SHORT).show()
             }
         }

@@ -3,5 +3,8 @@
     <style name="Base.Theme.ChattingApp" parent="Theme.Material3.DayNight">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">#00897B</item>
+        <item name="colorPrimaryVariant">#80CBC4</item>
+        <item name="colorPrimaryContainer">#B2DFDB</item>
     </style>
 </resources>

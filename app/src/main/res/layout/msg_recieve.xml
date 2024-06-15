@@ -7,9 +7,16 @@
         android:id="@+id/recieve_msg_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#C5CAE9"
-        android:padding="5dp"
-        android:layout_margin="5dp"
-        android:text="This is recieved message"/>
+        android:textSize="20sp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:background="@drawable/background_corners_all_20"
+        android:backgroundTint="?colorSecondaryVariant"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="This is recieved message" />
 
 </RelativeLayout>
